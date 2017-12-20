@@ -23,6 +23,20 @@ This is the Spring 2018 syllabus page for PQHS / CRSP 500: Observational Studies
 
 The course home page, with links to everything else you'll need, is at https://github.com/THOMASELOVE/500-2018. It will go live before the first class, on 2018-01-18.
 
+# Dr. Love
+
+```{r Lovepic-fig, echo = FALSE, out.width = '33%'}
+knitr::include_graphics("figures/Love-picB.jpg")
+```
+
+Thomas E. Love, Ph.D.
+
+- Professor of Medicine, Population and Quantitative Health Sciences, [CWRU](http://case.edu/)
+- Director of [Biostatistics and Evaluation](http://chrp.org/biostatistics-evaluation/), [Center for Health Care Research & Policy](http://chrp.org/), [MetroHealth Medical Center](https://www.metrohealth.org/research)
+- [Chief Data Scientist](http://www.betterhealthpartnership.org/data_center/), [Better Health Partnership](http://betterhealthpartnership.org/)
+- Track Lead for Health Care Analytics, MS in Biostatistics, [Department of Population and Quantitative Health Sciences](http://epbiwww.case.edu/), CWRU
+- Fellow, [American Statistical Association](http://www.amstat.org/)
+
 ## Getting Help! {-}
 
 To get help for anything related to the course, email Dr. Love at `thomas.love@case.edu`.
