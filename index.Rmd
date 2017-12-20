@@ -1,5 +1,5 @@
 ---
-title: "500 Syllabus - Spring 2018"
+title: "Observational Studies Spring 2018 Syllabus"
 author: "Thomas E. Love, Ph.D."
 date: "Version `r Sys.time()`"
 site: bookdown::bookdown_site
@@ -11,11 +11,11 @@ github-repo: thomaselove/500-syllabus
 description: "Syllabus for Spring 2018 edition of PQHS/CRSP 500"
 ---
 
-# Critical Information {-}
-
 ```{r cwrulogo-fig, echo = FALSE, out.width = '20%'}
 knitr::include_graphics("figures/cwru-stacked-logo-blue-no-tag.jpg")
 ```
+
+# Key Information {-}
 
 This is the Spring 2018 syllabus page for PQHS / CRSP 500: Observational Studies, taught by Professor Thomas Love. The course is given on Thursdays from 8:30 to 11 AM, generally in Wolstein Research Building room 1217.
 
