@@ -1,14 +1,12 @@
 ---
 title: "500 Syllabus - Spring 2018"
 author: "Thomas E. Love, Ph.D."
-date: "Version `r Sys.Date()`"
+date: "Version `r Sys.time()`"
 site: bookdown::bookdown_site
 documentclass: book
 output:
   bookdown::gitbook: default
   bookdown::pdf_book: default
-github-repo: thomaselove/500-syllabus
-description: "This is the syllabus for PQHS/CRSP 500: Observational Studies, in Spring 2018."
 ---
 
 # Critical Information {-}
