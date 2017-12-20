@@ -1,3 +1,3 @@
-This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "Get Started" at https://bookdown.org/ for how to compile this example.
+This is the material used to build the syllabus for PQHS / CRSP 500: Observational Studies in Spring 2018.
 
-You can find the preview of this example at https://bookdown.org/yihui/bookdown-demo/
+View the syllabus at 
