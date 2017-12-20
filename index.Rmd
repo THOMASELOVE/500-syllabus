@@ -21,7 +21,7 @@ This is the Spring 2018 syllabus page for PQHS / CRSP 500: Observational Studies
 
 ## Course Home Page {-}
 
-The course home page, with links to everything else you'll need, is at https://github.com/THOMASELOVE/500-2018. It will go live before the first class, on 2018-01-18.
+The course home page, with links to everything else you'll need, is at https://github.com/THOMASELOVE/500-2018. 
 
 ## Dr. Love {-}
 
@@ -42,5 +42,5 @@ Thomas E. Love, Ph.D.
 To get help for anything related to the course, email Dr. Love at `thomas.love@case.edu`.
 
 - Dr. Love is available on Tuesdays and Thursdays at CWRU, by appointment. To make an appointment, email him at `thomas.love@case.edu`. He is usually available for 15 minutes before and 30 minutes after class for drop-in conversations. His office is Wood WG-82 L.
-    + If you have any special concerns about the course, need special accommodations or any other issues for Dr. Love, please email or stop by before or after class.
+    + If you have any special concerns about the course, need special accommodations or any other issues for Dr. Love, please email or speak with him before or after class.
 
