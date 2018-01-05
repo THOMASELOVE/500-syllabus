@@ -23,6 +23,14 @@ This is the Spring 2018 syllabus page for PQHS / CRSP 500: Observational Studies
 
 The course home page, with links to everything else you'll need, is at https://github.com/THOMASELOVE/500-2018. 
 
+## Course Text {-}
+
+As the semester progresses, we are going to read a book together. The book we're reading is
+
+- Paul Rosenbaum's *Observation and Experiment: An Introduction to Causal Inference*, published in 2017 by Harvard University Press. The ISBN-13 number is 978-0674975576. The book is available electronically or in hardcover from Amazon and other retailers. The schedule for reading the book is part of the [course schedule](https://github.com/THOMASELOVE/500-2018/blob/master/SCHEDULE.md)
+
+Many additional sources will be presented and referenced in class, and those are gathered at the [texts page](https://github.com/THOMASELOVE/500-2018/tree/master/texts) of our web site.
+
 ## Getting Help! {-}
 
 To get help for anything related to the course, email Dr. Love at `thomas.love@case.edu`.

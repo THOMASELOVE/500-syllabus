@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
-<link rel="prev" href="index.html">
-<link rel="next" href="dr-love.html">
+<link rel="prev" href="a-few-writingpresenting-tips.html">
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -96,36 +96,46 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="course-description" class="section level1">
-<h1><span class="header-section-number">Section 1</span> Course Description</h1>
-<p>PQHS 500 (cross-listed as CRSP 500 and formerly known as EPBI 500) is a one-semester advanced course in modern design and analysis of observational studies, usually in the context of comparative effectiveness research, with a special emphasis on issues that arise in clinical and health services research.</p>
-<p>An observational study is an empirical investigation of treatments, policies or exposures and the effects that they cause, but it differs from an experiment in that the investigator cannot control the assignment of treatments to subjects. This course is designed to introduce design, data collection and analysis methods appropriate for scientists engaged in observational studies, and will prepare students to design and interpret their own studies, as well as those of others in their field. Technical formalities will be minimized, and the presentations will focus on the practical application of methods and strategies.</p>
-<div id="prerequisites" class="section level2">
-<h2><span class="header-section-number">1.1</span> Prerequisites</h2>
-<p>People take this course with a wide range of backgrounds and a common interest in using data effectively in research related to biology or medicine. All CWRU students who feel up to it are welcome, regardless of their field of study or prior experience. Students with a working knowledge of R, multiple regression, and some familiarity with logistic regression, should be well prepared.</p>
-<p>I strongly encourage people to first complete the PQHS 431-432 sequence, or at least to be substantially familiar with the use of R and R Studio (as well as, ideally, R Markdown) on the coding side, and with multivariate regression modeling and in particular logistic regression on the statistical side. Those who are unsure if they are well prepared for the course should contact the instructor for some advice.</p>
-</div>
-<div id="everything-is-on-the-web" class="section level2">
-<h2><span class="header-section-number">1.2</span> Everything is on the Web</h2>
-<p><a href="https://github.com/THOMASELOVE/500-2018" class="uri">https://github.com/THOMASELOVE/500-2018</a> is the place to go for everything related to this course. Please visit any time you need something. I update the web site frequently. You’ll find links there related to:</p>
+<div id="a-few-writingpresenting-tips-1" class="section level1">
+<h1><span class="header-section-number">Section 5</span> A Few Writing/Presenting Tips</h1>
+<ol style="list-style-type: decimal">
+<li><p>Statistics is a “getting the details right” business - we care deeply about details, and this applies to writing code or complete English sentences.</p></li>
+<li><p>Nothing impresses us as much as a clear and concise argument, presented using well-written English sentences, effective and well-labeled figures and tables.</p></li>
+<li><p>Don’t parrot back material that Dr. Love wrote or said. State ideas in your own words. Stating them in other words is, technically, plagiarism.</p></li>
+<li><p>Edit your more adventurous output; don’t present everything you know how to do in R, and don’t forget that someone is trying to read both your code and your results.</p></li>
+<li><p>Make your work easy to evaluate. In responding to an assignment, be sure to answer the question that was asked, restating it as necessary.</p></li>
+<li><p>Clearly label everything: graphs, tables, your answer to a specific question. Everything. Again, make your work easy to evaluate.</p></li>
+<li><p>Simplify. Emphasize ideas in plain language. Avoid jargon. Use English well.</p></li>
+<li><p>Data are plural. Use “the data <strong>are</strong> …” rather than ``the data <em>is</em> … ’’</p></li>
+<li><p>A paragraph must contain more than one sentence.</p></li>
+<li><p>Don’t switch tenses. If you want to write in the present tense, stick to it throughout.</p></li>
+<li><p>Don’t write or say random sample unless you used a random number generator. If you used haphazard sampling or convenience sampling, call it what it is, and indicate whether any problems could have cropped up as a result.</p></li>
+<li><p>Similarly, don’t defend a method of data collection because it is random. Most of the time we want to represent some population, and a random sample is just one way to ensure that certain types of biases have a low probability of creeping in.</p></li>
+<li><p>If you want to write that you used <span class="math inline">\(\alpha = 0.05\)</span> as your significance level, then state that your results were obtained using a 95% confidence level, not a 95% confidence interval, unless you are actually interpreting a confidence interval.</p></li>
+<li>If you’re looking at a <em>p</em>-value, then you should state either:
 <ul>
-<li>Your homework <strong>Assignments</strong></li>
-<li><strong>Data and Code</strong> I will provide</li>
-<li>my in-class presentation <strong>Slides</strong></li>
-<li>instructions and hints related to the <strong>Project</strong></li>
-<li>various outside <strong>Texts</strong></li>
-<li>a detailed <strong>Schedule</strong> of classes and deadlines</li>
-</ul>
+<li>[1] We’re using a 95% confidence level.<br />
+</li>
+<li>[2] We’re using a 5% significance level. or</li>
+<li>[3] We’re using <span class="math inline">\(\alpha = 0.05\)</span>.<br />
+</li>
+<li>Don’t use more than one of these expressions.</li>
+</ul></li>
+<li><p>Refer to all <em>p</em>-values that are less than 0.001 or perhaps less than 0.0001 as <span class="math inline">\(p &lt; 0.001\)</span>, rather than, for instance, <span class="math inline">\(p = 0.00000001\)</span> or, worse yet, <span class="math inline">\(p = 0\)</span>. In a similar vein, write all <span class="math inline">\(p\)</span>-values that exceed 0.99 as <span class="math inline">\(p &gt; 0.99\)</span> instead of, for instance, <span class="math inline">\(p = 1\)</span>.</p></li>
+<li><p>To the extent possible, don’t use <code>computer-ese</code> to label variables, plots or tables. R and Markdown allow you to change the labels on graphs and tables to meaningful things – do so. Use meaningful abbreviations, as necessary, explaining what they mean on the first usage.</p></li>
+<li><p>Use words that we all know, whenever possible, and provide clear definitions at the first encounter when jargon is mandatory.</p></li>
+<li><p>Often the most useful thing you can do in an analysis is to turn a table into a meaningful graph.</p></li>
+<li><p>When in doubt, err on the side of clearer expression. Clear thinking causes and is demonstrated by clear writing.</p></li>
+</ol>
 
-</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="dr-love.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="a-few-writingpresenting-tips.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
