@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   
   
+<link rel="prev" href="a-few-writingpresenting-tips.html">
 
-<link rel="next" href="course-description.html">
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
@@ -83,6 +83,9 @@
 <li class="chapter" data-level="3.4" data-path="assignments.html"><a href="assignments.html#homework-assignments"><i class="fa fa-check"></i><b>3.4</b> Homework Assignments</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="a-few-writingpresenting-tips.html"><a href="a-few-writingpresenting-tips.html"><i class="fa fa-check"></i><b>4</b> A Few Writing/Presenting Tips</a></li>
+<li class="chapter" data-level="5" data-path="a-few-tips-regarding-the-project.html"><a href="a-few-tips-regarding-the-project.html"><i class="fa fa-check"></i><b>5</b> A Few Tips Regarding the Project</a><ul>
+<li class="chapter" data-level="5.1" data-path="a-few-tips-regarding-the-project.html"><a href="a-few-tips-regarding-the-project.html#checking-to-see-if-your-propensity-scores-are-too-close-to-zero-or-one"><i class="fa fa-check"></i><b>5.1</b> Checking to See if Your Propensity Scores are Too Close to Zero or One</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -100,35 +103,23 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">Observational Studies Spring 2018 Syllabus</h1>
-<h4 class="author"><em>Thomas E. Love, Ph.D.</em></h4>
-<h4 class="date"><em>Version 2018-01-06 19:46:22</em></h4>
-</div>
-<div id="key-information" class="section level1 unnumbered">
-<h1>Key Information</h1>
-<p>This is the Spring 2018 syllabus page for PQHS / CRSP 500: Observational Studies, taught by Professor Thomas Love. The course is given on Thursdays from 8:30 to 11 AM, generally in Wolstein Research Building room 1217.</p>
-<div id="course-home-page" class="section level2 unnumbered">
-<h2>Course Home Page</h2>
-<p>The course home page, with links to everything else you’ll need, is at <a href="https://github.com/THOMASELOVE/500-2018" class="uri">https://github.com/THOMASELOVE/500-2018</a>.</p>
-</div>
-<div id="course-text" class="section level2 unnumbered">
-<h2>Course Text</h2>
-<p>As the semester progresses, we are going to read a book together. The book we’re reading is</p>
-<ul>
-<li>Paul Rosenbaum’s <em>Observation and Experiment: An Introduction to Causal Inference</em>, published in 2017 by Harvard University Press. The ISBN-13 number is 978-0674975576. The book is available electronically or in hardcover from Amazon and other retailers. The schedule for reading the book is part of the <a href="https://github.com/THOMASELOVE/500-2018/blob/master/SCHEDULE.md">course schedule</a></li>
-</ul>
-<p>Many additional sources will be presented and referenced in class, and those are gathered at the <a href="https://github.com/THOMASELOVE/500-2018/tree/master/texts">texts page</a> of our web site.</p>
-</div>
-<div id="getting-help" class="section level2 unnumbered">
-<h2>Getting Help!</h2>
-<p>To get help for anything related to the course, email Dr. Love at <code>thomas.love@case.edu</code>.</p>
-<ul>
-<li>Dr. Love is available on Tuesdays and Thursdays at CWRU, by appointment. To make an appointment, email him at <code>thomas.love@case.edu</code>. He is usually available for 15 minutes before and 30 minutes after class for drop-in conversations. His office is Wood WG-82 L.
-<ul>
-<li>If you have any special concerns about the course, need special accommodations or any other issues for Dr. Love, please email or speak with him before or after class.</li>
-</ul></li>
-</ul>
+<div id="a-few-tips-regarding-the-project" class="section level1">
+<h1><span class="header-section-number">Section 5</span> A Few Tips Regarding the Project</h1>
+<p>I expect you to do (and present) two analyses using propensity scores. You will eventually be submitting a single R Markdown file that takes your original (perhaps after cleaning) data, and produces all of the analyses you will do. You will perform a first analysis that uses matching and a second analysis that uses weighting.</p>
+<p>For the matched analysis, you can use any form of propensity score matching: in most cases this will probably be just 1:1 greedy matching without replacement. You are welcome to consider alternative matching strategies as part of your first analysis.</p>
+<p>My strong preference in a second analysis is that you use propensity score weighting (ATT approach) along with the linear propensity score included as an adjustor in the final outcome model after weighting – we’ll call this a ``doubly robust’’ analysis. Should that not be feasible for some reason, you may instead consider ATT weighting on the propensity score without the additional adjustment.</p>
+<div id="checking-to-see-if-your-propensity-scores-are-too-close-to-zero-or-one" class="section level2">
+<h2><span class="header-section-number">5.1</span> Checking to See if Your Propensity Scores are Too Close to Zero or One</h2>
+<p>We will worry if a propensity score value is below 0.01 or above 0.99. If that happens to you, contact me, quickly. If just one or two subjects fall in that range, we may wind up just dropping them from the study. If more fall in that range, we will have to look for variables included in your covariate list that either alone or in combination with other covariates, determine the treatment group perfectly.</p>
+<p>The simplest check is to get a summary of the bottom few and top few propensity score values within each treatment group. I might do this with the following commands, assuming my data are in a frame called {data}, which contains a treatment indicator (as a factor) called {treated.f} and the propensity scores in a variable called {ps}.</p>
+
+<p>For instance, with the {hw2} data, the Intervention group result should look something like this:</p>
+
+<p>The minimum PS is 0.13 and the maximum is 0.69, so that’s not a problem.</p>
+
+<p>Suppose you decide you want to include Age as a covariate in your propensity or outcome model, and also account for the notion that Age might have a non-linear relationship with what you’re trying to predict, or just for the notion that Age is an especially important continuous covariate to balance well. So you decide, as a result to include Age and Age squared in your model. Try this…</p>
+
+<p>If you’re including an interaction between a binary indicator and a continuous variable in a model for the purposes of the project, I would simply create a product term and include that. Include a product term if you have reason to believe there is a meaningful interaction between the variables.</p>
 
 </div>
 </div>
@@ -137,8 +128,8 @@
           </div>
         </div>
       </div>
+<a href="a-few-writingpresenting-tips.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="course-description.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
